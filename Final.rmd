@@ -31,7 +31,13 @@ Druggies- Categorical
 
 They are all categorical so we will be using the 'Cat-Cat' helper file.
 
-## Males
+##Males 
+
+##Graphical Results
+
+```{r}
+male <- FinalDat[FinalDat$sex=='M',]
+```
 
 
 ## Females
