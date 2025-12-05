@@ -52,6 +52,15 @@ fisher.test(table1)
 
 ## Females
 
+##Graphical Results
+
+```{r}
+Female <- FinalDat[FinalDat$sex=='F',]
+
+```
+
+
+
 
 ## LGBTQ
 
