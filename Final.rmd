@@ -56,9 +56,12 @@ fisher.test(table1)
 
 ```{r}
 Female <- FinalDat[FinalDat$sex=='F',]
-
 ```
 
+##Numerical Results
+```{r}
+table1 <- xtabs(~infected+ treatment, data=Female)
+```
 
 
 
