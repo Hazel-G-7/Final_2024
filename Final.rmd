@@ -39,6 +39,13 @@ They are all categorical so we will be using the 'Cat-Cat' helper file.
 male <- FinalDat[FinalDat$sex=='M',]
 ```
 
+##Numerical Results 
+
+```{r}
+table1 <- xtabs(~infected+ treatment, data=male)
+rowPerc(table1)
+colPerc(table1)
+```
 
 ## Females
 
