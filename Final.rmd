@@ -64,7 +64,10 @@ table1 <- xtabs(~infected+ treatment, data=Female)
 ```
 
 
-
+```{r}
+chisq.test(table1)
+fisher.test(table1)
+```
 ## LGBTQ
 
 
