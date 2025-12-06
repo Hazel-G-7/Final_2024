@@ -63,7 +63,7 @@ Female <- FinalDat[FinalDat$sex=='F',]
 table1 <- xtabs(~infected+ treatment, data=Female)
 ```
 
-
+##Inferential Results
 ```{r}
 chisq.test(table1)
 fisher.test(table1)
