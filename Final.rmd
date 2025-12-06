@@ -82,8 +82,15 @@ fisher.test(table1)
 ## Druggies
 
 ##Numerical Results
+
 ```{r}
 table1 <- xtabs(~DrugUser + treatment, data=FinalData)
 ```
 
+##Inferential Results
+
+```{r}
+chisq.test(table1)
+fisher.test(table1)
+```
 # Overall Results and Conclusions
