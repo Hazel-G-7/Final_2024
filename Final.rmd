@@ -42,11 +42,7 @@ male <- FinalDat[FinalDat$sex=='M',]
 
 ##Inferential Results
 
-```{r}
-chisq.test(table1)
-fisher.test(table1)
-```
- 
+
 
  
 
@@ -70,9 +66,24 @@ fisher.test(table1)
 ```
 ## LGBTQ
 
+##Numerical Results
 
+```{r}
+table1 <- xtabs(~LGBTQ + treatment, data=FinalData)
+```
+
+##Inferential Results
+
+```{r}
+chisq.test(table1)
+fisher.test(table1)
+```
 
 ## Druggies
 
+##Numerical Results
+```{r}
+table1 <- xtabs(~DrugUser + treatment, data=FinalData)
+```
 
 # Overall Results and Conclusions
